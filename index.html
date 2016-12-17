@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Airbnb in Manhattan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Source+Sans+Pro:400,700" rel="stylesheet">
+
+    <style>
+        img{
+            width:100%;
+        }
+        p{
+            width:100%;
+        }
+        body{
+            background-color: black;
+            color:lightgrey;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 2.2vh;
+        }
+        h1{
+            font-family: 'Lobster Two', cursive;
+            font-size: 8vh;
+        }
+        h1#title{
+            margin-top: 7%;
+        }
+        span.special{
+            color:#F16664;
+            opacity:0.8;
+        }
+        span.special2{
+            color:#79CCCD;
+        }
+        a{
+            color:#FFF6E6;
+            font-weight: 400;
+        }
+        a:hover{
+            text-decoration: none;
+            color:#79CCCD;
+        }
+        div.row{
+        }
+        h2{
+            font-family: 'Lobster Two', cursive;
+            font-size: 5vh;
+            margin-top: 0;
+            color:#F16664;
+        }
+        div.col-md-6{
+            padding-left: 0;
+        }
+        p.img_title{
+            font-weight: 700;
+            padding-top: 3%;
+        }
+        div.break{
+            width:60%;
+            margin-top: 5vh;
+            margin-left: 20%;
+            opacity:0.3;
+        }
+
+        p#end{
+            text-align: center;
+            margin-top: -3%;
+            color:#FFF6E6;
+            font-size: 1.5vh;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        div#middle{
+            height:150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id='title'><span class='special'>Airbnb</span> in Manhattan</h1>
+        <p id='source'>Author <a href='http://zhizhouwang.me'>Zhizhou Wang</a> | Source <a href='http://insideairbnb.com/index.html'>Inside Airbnb</a></p>
+        <div class="row">
+            <div class="col-md-7">
+                <br>
+                <br>
+                <br>
+                <p class='cont'>Airbnb, the online peer-to-peer marketplace that enables people to list or rent short-term lodging in residential properties founded in 2008, has become one of people's prior choice while travelling in recent years. It has over 2,000,000 listings in 34,000 cities and 191 countries.
+                    <br>
+                There are <span class='special2'>19,248</span> listings in Manhattan, counting half of all in New York City. Most of the listing are located in the East side of downtown area and west side of midtown, close to Time Squares.
+                <br>
+                The large amount of airbnbs in the city representing the popularity of this kind of living experience among tourists. Living in the apartment allow visitors have an experience as they <span class='special2'>live in the city</span>, and thus get closer to the city culture as well as the people who lives here.
+                <br>
+                About <span class='special2'>three quaters</span> of the hosts own only one place in the listing, and less then <span class='special2'>1,000</span> own more then 10. Most of the hosts does not make this for living, but for having an available room for a short term. For instance, international students go back home during summer holiday, and their apartments would be left with a high rent, so they're now able to post the apartment on Airbnb site and do a short-term rent without leaving the apartment empty for two to three month.
+                </p>
+            </div>
+            <div class="col-sm-5">
+                <img src='img/map.png' id='img1'>
+            </div>
+        </div>
+        <div class='row' id='middle'></div>
+        <div class="row">
+            <div class="col-md-7">
+                <h2>Price</h2>
+                <p class='cont'>Most of listing in Manhattan area has the price between <span class='special2'>100</span> dollars to <span class='special2'>200</span> dollars, which is higher than the price of the whole New York City area in general.
+                    <br>
+                The distribution of price range is also very evident. The rent in Uptown area northern than the Central Park is much lower than other boroughs. And although there're fewer listings in the Upper West side, the rent there is nevertherless competitive.
+                <br>
+                The whole price range is closely affected by the overall rate in Manhattan.
+                </p>
+                <div class="col-md-6" id='img_left'>
+                    <p class='img_title'>Price range in New York City</p>
+                    <img src='img/nyc_price.png'>
+                </div>
+                <div class="col-md-6" style='padding-left:1%;'>
+                    <p class='img_title'>Price range in Manhattan</p>
+                    <img src='img/mht_price.png'>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <img src='img/price_done.png'>
+            </div>
+        </div>
+        <div class='row' id='middle'></div>
+        <div class="row">
+            <div class="col-md-7">
+                <h2>Accomodates</h2>
+                <p class='cont'>Among the twenty thousands listing of Airbnbs in Manhattan, more than half of which are for <span class='special2'>1 to 2</span> guests like single visitors or couples, one bed accordingly. Another 4 thousands of them are for <span class='special2'>3 to 4 </span>guests, 2 beds, mainly for those travel with whole family or several friends.
+                </br>
+                In terms of room type, entire home and apartments are the most favorables, the second choice are private rooms. This is very understandable as while we're travelling, people prefer to have their private space instead of sharing with others.
+                </p>
+                <div class="col-md-10" id='img_left' style='padding-left:0'>
+                    <p class='img_title'>Room type</p>
+                    <img src='img/room_type.png'>
+                </div>
+                <div class="col-md-6" style='padding-left:2%;'>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <img src='img/acc_done.png'>
+            </div>
+        </div>
+        <div class='row' id='middle'></div>
+        <div class="row">
+            <div class="col-md-7">
+                <h2>Ratings and Reviews</h2>
+                <p class='cont'>The rating distribution is not quite obvious according to it's location as the previous two. But we can see that in the East side of downtown, the area that has most Airbnbs, has a relatively low rating.
+                <br>
+                Most of the listings are quite new, or has few availability as the number of reviews is only 1 to 10, which represents the characteristic of Airbnb.
+                </p>
+                <div class="col-md-6" id='img_left'>
+                    <p class='img_title'>Rating range</p>
+                    <img src='img/rating.png'>
+                </div>
+                <div class="col-md-6" style='padding-left:2%;'>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <img src='img/score_done.png'>
+            </div>
+        </div>
+
+        <div class='break'>
+            <hr id='divider'></hr>
+            <p id='end'>Copyright &copy; Zhizhou Wang </p>
+        </div>
+    </div>
+
+    </div>
+
+</body>
+
+</html>
